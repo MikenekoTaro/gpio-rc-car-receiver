@@ -4,6 +4,7 @@ radio.onReceivedNumber(function (receivedNumber) {
 })
 let モーター制御コード = 0
 let 最後に無線で受信してからの経過時間 = 0
+let テスト = 10
 led.enable(false)
 radio.setGroup(1)
 最後に無線で受信してからの経過時間 = 0

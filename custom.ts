@@ -113,6 +113,27 @@ namespace LowLevelGpioLibrary {
     }
 
     /**
+    * ビット毎のXOR計算
+    * @param dest Destination variable: number
+    * @param src Source variable: number
+    */
+    //% block="Bit-wise XOR of $dest and $src"
+    //% block.loc.ja="$destと$srcのビットごとのXOR"
+    export function BitWiseXOR(dest: number, src: number): number {
+        return (dest ^ src) // ビット毎XOR
+    }
+
+    /**
+    * ビット毎のNOT計算
+    * @param src Source variable: number
+    */
+    //% block="Bit-wise NOT of $src"
+    //% block.loc.ja="$srcのビットごとのNOT"
+    export function BitWiseNOT(src: number): number {
+        return (~src) // ビット毎NOT
+    }
+
+    /**
     * ビットテスト
     * ビット毎のAND計算の結果が非0ならTrue, 0ならFalse
     * @param dest Destination variable: number
